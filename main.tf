@@ -1,6 +1,6 @@
 #Create EC2 Instance
-resource "aws_instance" "instance1" {
-  ami                    = "ami-051ed863837a0b1b6"
+resource "aws_instance" "jenkins_instance" {
+  ami                    = "ami-04a0ae173da5807d3"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.jenkins_sg.id]
   tags = {
